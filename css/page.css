@@ -1,0 +1,116 @@
+:root{
+    --roxo:rgb(141, 17, 141);
+    --preto: rgb(22, 22, 22);
+    --cinza:rgb(163, 162, 162);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*TOPO*/
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header .titulo{
+    color: var(--roxo);
+    font-family: Arial;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--cinza);
+    margin-left: 10px;
+    font-size: 17px;
+    font-family: Arial;
+    transition: .3s ease all;
+}
+
+header nav a:hover{
+    background: var(--roxo);
+    color: white;
+}
+
+/*MEIO*/
+
+body{
+    background: var(--preto);
+    color: white;
+    font-size: 17px;
+    font-family: 'Trebuchet MS';
+}
+
+main .principal{
+    background-image:linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/renge.jpg');
+    height: 700px;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.non{
+    font-family: Arial;
+    font-size: 50px;
+}
+
+.principal .descricao{
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.botao{
+    padding: 15px 30px;
+    background:var(--cinza);
+    border: none;
+    color: white;
+    margin-right: 15px;
+    transition: .4s ease all;
+    border-radius: 5px;
+}
+
+.botao:hover{
+    background:var(--roxo);
+    color: white;
+}
+
+.botao i{
+    margin-right: 10px;
+}
+
+.botao .link{
+    text-decoration: none;
+    color: white;
+}
+
+.botao:nth-child(3){
+    padding:15px 5px 15px 15px;
+}
+
+ /*ALINHAMENTO*/
+
+.container{
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.principal .container{
+    width: 60%;
+}
+
+/*CARROSEL*/
+
+.thumbnail{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
